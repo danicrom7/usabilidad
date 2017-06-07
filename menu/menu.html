@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+ <html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>menu desplegable</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/reset.css">
+        <style>
+  
+      
+ nav {
+    border: 1px solid black;
+}
+nav ul {
+    list-style: none;
+}
+
+nav li:hover {
+    background-color: maroon;
+    color: papayawhip;
+}
+
+/*Items en cualquier nivel*/
+nav ul>li {
+    cursor: pointer;
+    text-align: center;
+    height: 2em;
+    padding-top: 0.5em;
+}
+
+/*Items del primer nivel*/
+nav>ul>li {
+    display: inline-block;
+    width: 13%;
+    position: relative
+}
+
+/*Submenu oculto */
+nav>ul>li>ul {
+    display: none;
+    color: black;
+    width: 100%;
+}
+
+/*Submenu al hacerse visible*/
+nav>ul>li:hover>ul {
+    display: block;
+    border: 1px solid;
+    background-color: white;
+    position : absolute;
+    top: 2em;
+    
+}
+
+/*Items del segundo nivel*/
+nav>ul>li>ul>li {
+    width: 100%;
+    height:2em;
+}
+        </style>
+    </head>
+    <body>
+        
+      <nav>
+		<ul>
+			<li>Inicio</li>
+			<li>Cursos
+				<ul>
+					<li>Front</li>
+					<li>Java</li>
+					<li>.Net</li>
+					<li>PHP/Drupal</li>
+				</ul>
+			</li>
+			<li>Servicios
+				<ul>
+					<li>Consultoria</li>
+					<li>Asesoria</li>
+					<li>Desarrollo en mano</li>
+					<li>Aplicaciones</li>
+				</ul>				
+			</li>
+			<li>Clientes</li>
+			<li>Conocenos</li>
+		</ul>
+	</nav>
+
+
+    </body>
+</html>
