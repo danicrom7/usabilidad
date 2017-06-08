@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+ <html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Barras de Progreso</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/animate.js"></script>
+    </head>
+    <body>
+      <div >
+          <h1>Habilidades</h1>
+	 
+		<div>
+		<p>Fuerza</p>
+			<progress id="fuerza" max="100" value="91"></progress>
+			<span></span>
+		</div>
+		
+	    <div>
+		<p>Resistencia</p>
+			<progress id="resis" max="100" value="72"></progress>
+			<span></span>
+		</div>
+		
+		
+		<div>
+		<p>Velocidad</p>
+			<progress id="speed" max="100" value="86"></progress>
+			<span></span>
+		</div>
+	
+		<div>
+		<p>Técnica</p>
+			<progress id="tecnica" max="100" value="52"></progress>
+			<span></span>
+		</div>
+		
+			
+		<div>
+		<p>Disparo</p>
+			<progress id="chute" max="100" value="79"></progress>
+			<span></span>
+		</div>
+		
+		<div>
+		<p>Regate</p>
+			<progress id="skill" max="100" value="36"></progress>
+			<span></span>
+		</div>
+			
+		<input type="button" id="boton" value="Cargar" />
+	</div>
+
+<script type="text/javascript"> 
+
+	window.onload = function() { 
+		
+		animateprogress("#fuerza",91);
+		animateprogress("#resis",72);
+		animateprogress("#speed",86);
+		animateprogress("#tecnica",52);
+		animateprogress("#chute",79);
+		animateprogress("#skill",36);
+		
+	} 	
+	document.querySelector ("#boton").addEventListener ("click", function() { 
+		animateprogress("#fuerza",91);
+		animateprogress("#resis",72);
+		animateprogress("#speed",86);
+		animateprogress("#tecnica",52);
+		animateprogress("#chute",79);
+		animateprogress("#skill",36);
+   
+	});
+</script>
+       
+       
+    </body>
+    
+          
+</html>
