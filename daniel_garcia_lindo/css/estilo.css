@@ -83,6 +83,10 @@ nav>ul>li>ul>li {
     .oculto{
         display: none;
     }
+    section{
+        width: 50%;
+        float: left;
+    }
 
     
 
